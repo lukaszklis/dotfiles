@@ -77,7 +77,3 @@ fi
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias vimconfig="vim ~/.vimrc"
-
-if [ -x ~/.vim/bundle/gruvbox/gruvbox_256palette_osx.sh ]; then
-  ~/.vim/bundle/gruvbox/gruvbox_256palette_osx.sh
-fi
