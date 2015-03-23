@@ -77,3 +77,5 @@ fi
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias vimconfig="vim ~/.vimrc"
+alias code="tmux attach -t code"
+alias lls="tmux attach -t lls"
