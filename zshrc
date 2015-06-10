@@ -80,3 +80,5 @@ alias vimconfig="vim ~/.vimrc"
 alias code="tmux attach -t code"
 alias lls="tmux attach -t lls"
 alias discovery="tmux attach -t discovery"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
