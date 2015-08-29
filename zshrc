@@ -82,3 +82,6 @@ alias lls="tmux attach -t lls"
 alias discovery="tmux attach -t discovery"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export NVM_DIR="/Users/lukaszklis/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
