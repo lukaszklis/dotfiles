@@ -49,7 +49,7 @@ plugins=(git osx bower brew cap common-aliases sudo vagrant web-search)
 
 # User configuration
 
-export PATH="/Users/lukaszklis/.rvm/gems/ruby-2.1.1/bin:/Users/lukaszklis/.rvm/gems/ruby-2.1.1@global/bin:/Users/lukaszklis/.rvm/rubies/ruby-2.1.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/lukaszklis/.rvm/gems/ruby-2.1.1/bin:/Users/lukaszklis/.rvm/gems/ruby-2.1.1@global/bin:/Users/lukaszklis/.rvm/rubies/ruby-2.1.1/bin:/usr/local/sbin:/Users/lukaszklis/.rvm/bin:/Users/lukaszklis/.yadr/bin:/Users/lukaszklis/.yadr/bin/yadr:/Users/lukaszklis/.yadr/bin:/Users/lukaszklis/.yadr/bin/yadr"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -81,7 +81,7 @@ alias code="tmux attach -t code"
 alias lls="tmux attach -t lls"
 alias discovery="tmux attach -t discovery"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 export NVM_DIR="/Users/lukaszklis/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
