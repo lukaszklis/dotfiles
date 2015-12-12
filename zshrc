@@ -77,9 +77,6 @@ fi
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias vimconfig="vim ~/.vimrc"
-alias code="tmux attach -t code"
-alias lls="tmux attach -t lls"
-alias discovery="tmux attach -t discovery"
 
 export NVM_DIR="/Users/lukaszklis/.nvm"
 source $(brew --prefix nvm)/nvm.sh
