@@ -78,7 +78,9 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias vimconfig="vim ~/.vimrc"
 
+# nvm
 export NVM_DIR="/Users/lukaszklis/.nvm"
 source $(brew --prefix nvm)/nvm.sh
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
