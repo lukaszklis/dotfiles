@@ -84,5 +84,9 @@ alias vimconfig="vim ~/.vimrc"
 export NVM_DIR="/Users/lukaszklis/.nvm"
 source $(brew --prefix nvm)/nvm.sh
 
+if [[ -d "/Applications/MacVim.app" ]]; then
+  alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+fi
+
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
