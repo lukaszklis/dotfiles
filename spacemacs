@@ -29,6 +29,8 @@ values."
      emacs-lisp
      git
      github
+     html
+     javascript
      markdown
      org
      osx
@@ -41,6 +43,7 @@ values."
      spell-checking
      spotify
      syntax-checking
+     typescript
      version-control
      yaml
      )
