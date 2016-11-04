@@ -79,6 +79,7 @@ fi
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias vimconfig="vim ~/.vimrc"
+alias gitx="open -a GitX ."
 
 # nvm
 export NVM_DIR="/Users/lukaszklis/.nvm"
