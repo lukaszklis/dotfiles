@@ -53,9 +53,6 @@ export PATH="/usr/local/bin:/usr/local/opt/php56/bin:$PATH:/usr/bin:/bin:/usr/sb
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/dotfiles/zsh-custom/aliases/work.zsh
-
-function weather() curl -4 wttr.in/$1
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
