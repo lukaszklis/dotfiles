@@ -1,3 +1,4 @@
+# Uncomment the following line when debugging zsh’s performance
 # zmodload zsh/zprof
 
 # Path to your oh-my-zsh installation.
@@ -85,7 +86,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # zsh custom
 
 source $HOME/dotfiles/zsh-custom/aliases/work.zsh
-
 source $HOME/dotfiles/zsh-custom/functions/weather.zsh
 
+# Uncomment the following line when debugging zsh’s performance
 # zprof
