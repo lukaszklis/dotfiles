@@ -45,7 +45,7 @@ ZSH_CUSTOM=$HOME/dotfiles/zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump bower brew common-aliases docker git github httpie jira node npm nvm osx sudo vagrant)
+plugins=(autojump bower brew common-aliases docker git github httpie jira node npm osx sudo vagrant)
 
 # User configuration
 
@@ -73,10 +73,6 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias vimconfig="vim ~/.vimrc"
 alias tower="open -a Tower ."
 
-# nvm
-export NVM_DIR="/Users/lukaszklis/.nvm"
-source $(brew --prefix nvm)/nvm.sh
-
 if [[ -d "/Applications/MacVim.app" ]]; then
   alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 fi
@@ -88,5 +84,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 source $HOME/dotfiles/zsh-custom/aliases/work.zsh
 
-source $HOME/dotfiles/zsh-custom/functions/load-nvmrc.zsh
 source $HOME/dotfiles/zsh-custom/functions/weather.zsh
