@@ -1,3 +1,5 @@
+# zmodload zsh/zprof
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -85,3 +87,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 source $HOME/dotfiles/zsh-custom/aliases/work.zsh
 
 source $HOME/dotfiles/zsh-custom/functions/weather.zsh
+
+# zprof
