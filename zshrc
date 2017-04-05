@@ -83,11 +83,7 @@ fi
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# load avn
-[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh"
-
 # zsh custom
-
 source $HOME/dotfiles/zsh-custom/aliases/work.zsh
 source $HOME/dotfiles/zsh-custom/functions/weather.zsh
 
