@@ -1,1 +1,1 @@
-alias yarn-watch-tests="yarn test -- -o -watch"
+alias yarn-watch-tests="yarn test -- --watch"
