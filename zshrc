@@ -85,6 +85,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # zsh custom
 source $HOME/dotfiles/zsh-custom/aliases/work.zsh
+source $HOME/dotfiles/zsh-custom/aliases/yarn.zsh
 source $HOME/dotfiles/zsh-custom/functions/weather.zsh
 
 if [ -f $HOME/dotfiles/zsh-custom/functions/exercism.zsh ]; then
