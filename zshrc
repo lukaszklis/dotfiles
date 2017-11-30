@@ -42,7 +42,7 @@ COMPLETION_WAITING_DOTS="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=$HOME/dotfiles/zsh-custom
+ZSH_CUSTOM=$HOME/dev/personal/dotfiles/zsh-custom
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -52,7 +52,7 @@ plugins=(autojump brew common-aliases git github httpie jira mvn node npm osx su
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/local/opt/php56/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin"
+export PATH="/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -87,13 +87,12 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
 # zsh custom
-source $HOME/dotfiles/zsh-custom/aliases/work.zsh
-source $HOME/dotfiles/zsh-custom/aliases/yarn.zsh
-source $HOME/dotfiles/zsh-custom/functions/ng.zsh
-source $HOME/dotfiles/zsh-custom/functions/weather.zsh
+source $HOME/dev/personal/dotfiles/zsh-custom/aliases/yarn.zsh
+source $HOME/dev/personal/dotfiles/zsh-custom/functions/ng.zsh
+source $HOME/dev/personal/dotfiles/zsh-custom/functions/weather.zsh
 
-if [ -f $HOME/dotfiles/zsh-custom/functions/exercism.zsh ]; then
-  . $HOME/dotfiles/zsh-custom/functions/exercism.zsh
+if [ -f $HOME/dev/personal/dotfiles/zsh-custom/functions/exercism.zsh ]; then
+  . $HOME/dev/personal/dotfiles/zsh-custom/functions/exercism.zsh
 fi
 
 # Uncomment the following line when debugging zsh’s performance
