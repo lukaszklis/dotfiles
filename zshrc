@@ -90,6 +90,7 @@ if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 source $HOME/dev/personal/dotfiles/zsh-custom/aliases/yarn.zsh
 source $HOME/dev/personal/dotfiles/zsh-custom/functions/ng.zsh
 source $HOME/dev/personal/dotfiles/zsh-custom/functions/weather.zsh
+source $HOME/dev/personal/dotfiles/zsh-custom/functions/brew-cask-outdated.zsh
 
 if [ -f $HOME/dev/personal/dotfiles/zsh-custom/functions/exercism.zsh ]; then
   . $HOME/dev/personal/dotfiles/zsh-custom/functions/exercism.zsh
