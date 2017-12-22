@@ -48,7 +48,7 @@ ZSH_CUSTOM=$HOME/dev/personal/dotfiles/zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump brew common-aliases git github httpie jira mvn node npm osx sudo yarn vagrant)
+plugins=(autojump brew common-aliases composer git github httpie jira mvn node npm osx sudo yarn vagrant)
 
 # User configuration
 
