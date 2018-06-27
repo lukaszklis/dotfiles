@@ -3,7 +3,7 @@
 
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="dracula"
+ZSH_THEME="robbyrussell"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 ZSH_CUSTOM=$HOME/dev/personal/dotfiles/zsh-custom
