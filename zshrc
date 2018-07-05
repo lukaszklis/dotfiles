@@ -10,7 +10,7 @@ ZSH_CUSTOM=$HOME/dev/personal/dotfiles/zsh-custom
 
 plugins=(autojump brew common-aliases composer git httpie npm osx vagrant)
 
-export PATH="/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin"
+export PATH="/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:/usr/local/opt/node@8/bin"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -28,8 +28,6 @@ alias git=hub
 alias run_headless_chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222 --headless"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
-
 
 source $ZSH_CUSTOM/aliases/yarn.zsh
 source $ZSH_CUSTOM/functions/weather.zsh
