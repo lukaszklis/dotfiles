@@ -32,6 +32,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 source $ZSH_CUSTOM/aliases/yarn.zsh
 source $ZSH_CUSTOM/functions/weather.zsh
 source $ZSH_CUSTOM/functions/brew-cask-outdated.zsh
+source $ZSH_CUSTOM/functions/pjatk.zsh
 
 if [ -f $ZSH_CUSTOM/functions/exercism.zsh ]; then
   . $ZSH_CUSTOM/functions/exercism.zsh
