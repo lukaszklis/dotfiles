@@ -10,7 +10,8 @@ ZSH_CUSTOM=$HOME/dev/personal/dotfiles/zsh-custom
 
 plugins=(autojump brew common-aliases composer git httpie npm osx vagrant)
 
-export PATH="/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:/usr/local/opt/node@8/bin"
+export GOPATH="/Users/lukaszklis/dev/go"
+export PATH="/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:/usr/local/opt/node@8/bin:$GOPATH/bin"
 
 source $ZSH/oh-my-zsh.sh
 
