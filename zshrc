@@ -29,6 +29,7 @@ alias git=hub
 alias run_headless_chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222 --headless"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
 source $ZSH_CUSTOM/aliases/yarn.zsh
 source $ZSH_CUSTOM/functions/weather.zsh
@@ -38,9 +39,6 @@ source $ZSH_CUSTOM/functions/pjatk.zsh
 if [ -f $ZSH_CUSTOM/functions/exercism.zsh ]; then
   . $ZSH_CUSTOM/functions/exercism.zsh
 fi
-
-export NVM_DIR="$HOME/.nvm"
-  . "/usr/local/opt/nvm/nvm.sh"
 
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
