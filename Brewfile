@@ -14,7 +14,10 @@ brew "ruby-build"
 
 cask "cyberduck"
 cask "google-chrome"
+cask "imageoptim"
 cask "iterm2"
+cask "slack"
+cask "sketch"
 cask "spectacle"
 cask "webstorm"
 
