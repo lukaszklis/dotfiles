@@ -43,3 +43,6 @@ fi
 
 # Uncomment the following line when debugging zsh’s performance
 # zprof
+
+# added by travis gem
+[ -f /Users/lukaszklis/.travis/travis.sh ] && source /Users/lukaszklis/.travis/travis.sh
