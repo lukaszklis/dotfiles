@@ -41,6 +41,10 @@ if [ -f $ZSH_CUSTOM/functions/exercism.zsh ]; then
   . $ZSH_CUSTOM/functions/exercism.zsh
 fi
 
+if [ -f $ZSH_CUSTOM/functions/work.zsh ]; then
+  . $ZSH_CUSTOM/functions/work.zsh
+fi
+
 # Uncomment the following line when debugging zsh’s performance
 # zprof
 
