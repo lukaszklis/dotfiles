@@ -50,3 +50,7 @@ fi
 
 # added by travis gem
 [ -f /Users/lukaszklis/.travis/travis.sh ] && source /Users/lukaszklis/.travis/travis.sh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/lukaszklis/.sdkman"
+[[ -s "/Users/lukaszklis/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/lukaszklis/.sdkman/bin/sdkman-init.sh"
