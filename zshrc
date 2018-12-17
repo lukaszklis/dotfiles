@@ -4,12 +4,12 @@
 export ZSH=$HOME/.oh-my-zsh
 export LC_ALL=en_US.UTF-8
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="dracula"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 ZSH_CUSTOM=$HOME/dev/personal/dotfiles/zsh-custom
 
-plugins=(autojump common-aliases composer git npm osx vagrant)
+plugins=(autojump common-aliases composer git npm osx vagrant zsh-autosuggestions)
 
 export GOPATH="/Users/lukaszklis/dev/go"
 export PATH="/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:/usr/local/opt/node@8/bin:$GOPATH/bin"
