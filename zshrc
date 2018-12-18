@@ -48,12 +48,12 @@ if [ -f $ZSH_CUSTOM/functions/work.zsh ]; then
   . $ZSH_CUSTOM/functions/work.zsh
 fi
 
-# Uncomment the following line when debugging zsh’s performance
-# zprof
-
 # added by travis gem
 [ -f /Users/lukaszklis/.travis/travis.sh ] && source /Users/lukaszklis/.travis/travis.sh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/lukaszklis/.sdkman"
 [[ -s "/Users/lukaszklis/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/lukaszklis/.sdkman/bin/sdkman-init.sh"
+
+# Uncomment the following line when debugging zsh’s performance
+# zprof
