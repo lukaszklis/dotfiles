@@ -16,3 +16,6 @@
 [submodule "zsh-custom/plugins/zsh-autosuggestions"]
 	path = zsh-custom/plugins/zsh-autosuggestions
 	url = git@github.com:zsh-users/zsh-autosuggestions.git
+[submodule "dracula/alfred"]
+	path = dracula/alfred
+	url = git@github.com:dracula/alfred.git
