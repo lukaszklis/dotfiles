@@ -45,6 +45,7 @@ cask "whatsapp"
 
 mas "1Password 7", id: 1333542190
 mas "Bear", id: 1091189122
+mas "BetterSnapTool", id: 417375580
 mas "iA Writer", id: 775737590
 mas "Keynote", id: 409183694
 mas "Monosnap", id: 540348655
