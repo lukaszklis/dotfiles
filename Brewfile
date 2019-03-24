@@ -42,7 +42,6 @@ cask "station"
 cask "spotify"
 cask "sublime-merge"
 cask "visual-studio-code"
-cask "webstorm"
 cask "whatsapp"
 
 mas "1Password 7", id: 1333542190
