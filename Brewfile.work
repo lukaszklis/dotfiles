@@ -4,5 +4,6 @@ tap "heroku/brew"
 
 brew "kubernetes-cli"
 brew "stern"
+brew "watch"
 
 cask "intellij-idea"
