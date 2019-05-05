@@ -3,6 +3,8 @@ tap "homebrew/cask"
 tap "heroku/brew"
 
 brew "kubernetes-cli"
+brew "maven"
+brew "node@10"
 brew "stern"
 brew "watch"
 
