@@ -4,7 +4,7 @@
 export ZSH=$HOME/.oh-my-zsh
 export LC_ALL=en_US.UTF-8
 
-ZSH_THEME=""
+ZSH_THEME="robbyrussell"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 ZSH_CUSTOM=$HOME/dev/personal/dotfiles/zsh-custom
@@ -15,9 +15,6 @@ export GOPATH="/Users/lukaszklis/dev/go"
 export PATH="/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:$GOPATH/bin"
 
 source $ZSH/oh-my-zsh.sh
-
-autoload -U promptinit; promptinit
-prompt pure
 
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
