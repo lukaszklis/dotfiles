@@ -12,7 +12,7 @@ ZSH_CUSTOM=$HOME/dev/personal/dotfiles/zsh-custom
 plugins=(autojump common-aliases composer git npm osx vagrant zsh-autosuggestions)
 
 export GOPATH="/Users/lukaszklis/dev/go"
-export PATH="/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:$GOPATH/bin"
+export PATH="/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:$GOPATH/bin:/usr/local/opt/node@10/bin"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -31,7 +31,6 @@ alias vimconfig="vim ~/.vimrc"
 alias zshconfig="vim ~/.zshrc"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
 # travis gem
 [ -f /Users/lukaszklis/.travis/travis.sh ] && source /Users/lukaszklis/.travis/travis.sh
