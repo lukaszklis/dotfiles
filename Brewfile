@@ -2,7 +2,6 @@ cask_args appdir: "/Applications"
 tap "homebrew/cask"
 tap "heroku/brew"
 
-brew "angular-cli"
 brew "autojump"
 brew "bat"
 brew "exercism"
@@ -35,8 +34,6 @@ cask "postman"
 cask "sequel-pro"
 cask "slack"
 cask "sketch"
-cask "skitch"
-cask "station"
 cask "spotify"
 cask "sublime-merge"
 cask "visual-studio-code"
@@ -45,6 +42,7 @@ mas "1Password 7", id: 1333542190
 mas "BetterSnapTool", id: 417375580
 mas "iA Writer", id: 775737590
 mas "Keynote", id: 409183694
+mas "Monosnap", id: 540348655
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "The Unarchiver", id: 425424353
