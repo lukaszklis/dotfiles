@@ -11,7 +11,7 @@ ZSH_CUSTOM=$HOME/dev/personal/dotfiles/zsh-custom
 
 plugins=(autojump common-aliases composer git npm osx vagrant zsh-autosuggestions)
 
-export GOPATH="/Users/lukaszklis/dev/go"
+export GOPATH="$HOME/dev/go"
 export PATH="/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:$GOPATH/bin:/usr/local/opt/node@10/bin"
 
 source $ZSH/oh-my-zsh.sh
@@ -32,11 +32,14 @@ alias zshconfig="vim ~/.zshrc"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # travis gem
-[ -f /Users/lukaszklis/.travis/travis.sh ] && source /Users/lukaszklis/.travis/travis.sh
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
+
+# work-related functions
+[ -f $ZSH_CUSTOM/functions/work.sh ] && source $ZSH_CUSTOM/functions/work.sh
 
 # sdkman
-export SDKMAN_DIR="/Users/lukaszklis/.sdkman"
-[[ -s "/Users/lukaszklis/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/lukaszklis/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
 
 # Uncomment the following line when debugging zsh’s performance
 # zprof
