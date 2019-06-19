@@ -22,6 +22,7 @@ fi
 
 # aliases
 alias brew_cask_outdated="brew cask outdated --greedy"
+alias update_submodules="git submodule update --recursive --remote"
 alias git=hub
 alias jpg2jpg="mogrify -format jpg -quality 85 *1x.jpg; mogrify -format jpg -quality 35 *2x.jpg; find . -name '*.jpg' | imageoptim"
 alias ohmyzsh="vim ~/.oh-my-zsh"
