@@ -9,7 +9,7 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 ZSH_CUSTOM=$HOME/dev/personal/dotfiles/zsh-custom
 
-plugins=(autojump common-aliases composer git npm osx vagrant zsh-autosuggestions)
+plugins=(autojump common-aliases composer git npm osx vagrant zsh-autosuggestions zsh-syntax-highlighting)
 
 export GOPATH="$HOME/dev/go"
 export PATH="/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:$GOPATH/bin:/usr/local/opt/node@10/bin"
