@@ -19,3 +19,4 @@ cscope.po.out
 .sass-cache/
 *.iml
 zsh-custom/functions/work.sh
+*.code-workspace
