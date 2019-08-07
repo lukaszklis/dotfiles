@@ -4,15 +4,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = git@github.com:robbyrussell/oh-my-zsh.git
-[submodule "dracula/sequel-pro"]
-	path = dracula/sequel-pro
-	url = git@github.com:dracula/sequel-pro.git
-[submodule "dracula/jetbrains"]
-	path = dracula/jetbrains
-	url = git@github.com:dracula/jetbrains.git
-[submodule "dracula/iterm"]
-	path = dracula/iterm
-	url = git@github.com:dracula/iterm.git
 [submodule "zsh-custom/plugins/zsh-autosuggestions"]
 	path = zsh-custom/plugins/zsh-autosuggestions
 	url = git@github.com:zsh-users/zsh-autosuggestions.git
