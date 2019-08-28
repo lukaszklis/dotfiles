@@ -31,6 +31,7 @@ alias vimconfig="vim ~/.vimrc"
 alias zshconfig="vim ~/.zshrc"
 alias cssconf-import="node scripts/spreadsheet-import 1BnWKMJCu3zszqRlhr5sxkgJ5mofHIjN15feDSADVwvA"
 alias jsconf-import="node scripts/spreadsheet-import 1Dj6YjOQZe8KnOx29nsjGoRt-ZaHPjUEwU9cnuVVboPQ"
+alias cl="clear"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
