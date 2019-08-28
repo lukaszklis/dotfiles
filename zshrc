@@ -4,7 +4,7 @@
 export ZSH=$HOME/.oh-my-zsh
 export LC_ALL=en_US.UTF-8
 
-ZSH_THEME="kolo"
+ZSH_THEME="robbyrussell"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 ZSH_CUSTOM=$HOME/dev/personal/dotfiles/zsh-custom
