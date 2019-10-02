@@ -34,6 +34,7 @@ alias jsconf-import="node scripts/spreadsheet-import 1Dj6YjOQZe8KnOx29nsjGoRt-Za
 alias cl="clear"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
 # travis gem
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
