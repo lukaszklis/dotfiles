@@ -1,0 +1,1 @@
+/Users/lukaszklis/dev/personal/dotfiles/minimal_improved/minimal_improve.zsh-theme
