@@ -7,6 +7,7 @@ export LC_ALL=en_US.UTF-8
 ZSH_THEME="minimal"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
+DISABLE_MAGIC_FUNCTIONS="true"
 ZSH_CUSTOM=$HOME/dev/personal/dotfiles/zsh-custom
 
 plugins=(autojump common-aliases composer git npm osx vagrant zsh-autosuggestions zsh-syntax-highlighting)
