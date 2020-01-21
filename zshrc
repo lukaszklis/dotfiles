@@ -35,7 +35,6 @@ alias jsconf-import="node scripts/spreadsheet-import 1Dj6YjOQZe8KnOx29nsjGoRt-Za
 alias cl="clear"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
 # travis gem
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
@@ -46,6 +45,11 @@ if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 # sdkman
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # Uncomment the following line when debugging zsh’s performance
 # zprof
