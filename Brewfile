@@ -1,10 +1,12 @@
 cask_args appdir: "/Applications"
 tap "homebrew/cask"
 tap "heroku/brew"
+tap "homebrew/cask-fonts"
 
 brew "autojump"
 brew "bat"
 brew "exercism"
+brew "font-jetbrains-mono"
 brew "git"
 brew "gnupg"
 brew "hub"
