@@ -3,7 +3,5 @@
   excludesfile = /Users/lukaszklis/dev/personal/dotfiles/gitignore
 [include]
   path = .gitconfig.user
-[gpg]
-  program = /usr/local/bin/gpg
 [pull]
   rebase = true
