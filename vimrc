@@ -50,13 +50,13 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
-Plug 'haishanh/night-owl.vim'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
 " Colorscheme
 syntax on
-colorscheme night-owl
+colorscheme gruvbox
 
 " CtrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -131,10 +131,6 @@ let g:syntastic_check_on_open=0
 let g:syntastic_echo_current_error=0
 let g:syntastic_auto_jump=0
 let g:syntastic_auto_loc_list=0
-
-if has("termguicolors")
-  set termguicolors
-end
 
 " MacVim setup
 if has("gui_macvim")
