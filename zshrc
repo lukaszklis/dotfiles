@@ -35,6 +35,7 @@ alias jsconf-import="node scripts/spreadsheet-import 1Dj6YjOQZe8KnOx29nsjGoRt-Za
 alias cl="clear"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # travis gem
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
