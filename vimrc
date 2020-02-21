@@ -56,6 +56,7 @@ call plug#end()
 
 " Colorscheme
 syntax on
+set background=dark
 colorscheme gruvbox
 
 " CtrlP
