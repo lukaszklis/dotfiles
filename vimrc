@@ -50,14 +50,14 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
-Plug 'morhetz/gruvbox'
+Plug 'draculatheme/vim', { 'as': 'dracula' }
 
 call plug#end()
 
 " Colorscheme
 syntax on
 set background=dark
-colorscheme gruvbox
+colorscheme dracula
 
 " CtrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
