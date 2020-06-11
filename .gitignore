@@ -1,4 +1,5 @@
 .DS_Store
+vim/pack/*
 vim/plugged/*
 zsh-custom/functions/work.zsh
 zsh-custom/themes/dracula-pro.zsh-theme
