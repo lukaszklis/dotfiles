@@ -1,6 +1,8 @@
 # Uncomment the following line when debugging zsh’s performance
 # zmodload zsh/zprof
 
+ZSH_DISABLE_COMPFIX="true"
+
 export ZSH=$HOME/.oh-my-zsh
 export LC_ALL=en_US.UTF-8
 
