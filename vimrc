@@ -55,7 +55,9 @@ call plug#end()
 
 " Colorscheme
 packadd! dracula_pro
+
 syntax on
+set background=dark
 let g:dracula_colorterm = 0
 colorscheme dracula_pro
 
