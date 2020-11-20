@@ -12,7 +12,7 @@ COMPLETION_WAITING_DOTS="true"
 DISABLE_MAGIC_FUNCTIONS="true"
 ZSH_CUSTOM=$HOME/dev/personal/dotfiles/zsh-custom
 
-plugins=(autojump common-aliases composer git npm osx vagrant zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(autojump common-aliases composer git npm osx sublime-merge vagrant zsh-autosuggestions zsh-syntax-highlighting)
 
 export GOPATH="$HOME/dev/go"
 export PATH="/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:$GOPATH/bin:/usr/local/opt/node@10/bin:/home/linuxbrew/.linuxbrew/bin"
@@ -37,6 +37,7 @@ alias jsconf-import="node scripts/spreadsheet-import 1Dj6YjOQZe8KnOx29nsjGoRt-Za
 alias cl="clear"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
