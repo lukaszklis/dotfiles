@@ -39,7 +39,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'Townk/vim-autoclose'
 Plug 'airblade/vim-gitgutter'
 Plug 'bogado/file-line'
-Plug 'grep.vim'
+Plug 'vim-scripts/grep.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'mattn/emmet-vim'
