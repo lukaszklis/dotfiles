@@ -22,7 +22,6 @@ export GOPATH="$HOME/dev/go"
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:$GOPATH/bin"
 export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:/usr/local/opt/bzip2/bin"
-export PATH="$PATH:$HOME/.pyenv/shims"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -38,11 +37,6 @@ alias png2jpg="mogrify -format jpg -background white -alpha remove -quality 85 *
 alias vimconfig="vim ~/.vimrc"
 alias zshconfig="vim ~/.zshrc"
 alias cl="clear"
-
-if which pyenv > /dev/null; then
-  eval "$(pyenv init --path)";
-  eval "$(pyenv init -)";
-fi
 
 # work-related functions
 [ -f $ZSH_CUSTOM/functions/work.sh ] && source $ZSH_CUSTOM/functions/work.sh
