@@ -1,9 +1,6 @@
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 
-# Uncomment the following line when debugging zsh’s performance
-# zmodload zsh/zprof
-
 ZSH_DISABLE_COMPFIX="true"
 
 export ZSH=$HOME/.oh-my-zsh
@@ -22,6 +19,9 @@ export GOPATH="$HOME/dev/go"
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:$GOPATH/bin"
 export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:/usr/local/opt/bzip2/bin"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export PATH="/opt/homebrew/opt/icu4c/bin:$PATH"
+export PATH="/opt/homebrew/opt/icu4c/sbin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -41,8 +41,8 @@ alias cl="clear"
 # work-related functions
 [ -f $ZSH_CUSTOM/functions/work.sh ] && source $ZSH_CUSTOM/functions/work.sh
 
-# Uncomment the following line when debugging zsh’s performance
-# zprof
+eval "$(starship init zsh)"
+eval "$(direnv hook zsh)"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
