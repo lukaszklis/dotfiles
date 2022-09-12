@@ -58,6 +58,9 @@ symbol = "exs "
 [elm]
 symbol = "elm "
 
+[gcloud]
+symbol = "gcloud "
+
 [git_branch]
 symbol = "git "
 
