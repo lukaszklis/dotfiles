@@ -14,13 +14,15 @@ plugins=(asdf autojump common-aliases composer git npm macos sublime-merge vagra
 
 export GOPATH="$HOME/dev/go"
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:$GOPATH/bin"
-export PATH="$PATH:/opt/homebrew/bin"
-export PATH="$PATH:/usr/local/opt/bzip2/bin"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
+export PATH="/usr/local/opt/bzip2/bin:$PATH"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export PATH="/opt/homebrew/opt/icu4c/bin:$PATH"
 export PATH="/opt/homebrew/opt/icu4c/sbin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
+source "$HOME/.cargo/env"
 
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
