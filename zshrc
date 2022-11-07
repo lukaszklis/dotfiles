@@ -1,5 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 ZSH_DISABLE_COMPFIX="true"
 
 export ZSH=$HOME/.oh-my-zsh
@@ -42,6 +40,3 @@ alias cl="clear"
 
 eval "$(starship init zsh)"
 eval "$(direnv hook zsh)"
-
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
