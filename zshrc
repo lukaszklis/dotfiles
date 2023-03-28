@@ -10,6 +10,7 @@ DISABLE_MAGIC_FUNCTIONS="true"
 ZSH_CUSTOM=$HOME/dev/personal/dotfiles/zsh-custom
 
 fpath=($HOME/.asdf/completions $fpath)
+fpath=($ZSH_CUSTOM/plugins/zsh-completions/src $fpath)
 plugins=(asdf autojump common-aliases composer git npm macos sublime-merge vagrant zsh-autosuggestions zsh-syntax-highlighting)
 
 export GOPATH="$HOME/dev/go"
