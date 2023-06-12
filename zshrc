@@ -42,4 +42,5 @@ alias cl="clear"
 # work-related functions
 [ -f $ZSH_CUSTOM/functions/work.sh ] && source $ZSH_CUSTOM/functions/work.sh
 
+eval "$(starship init zsh)"
 eval "$(direnv hook zsh)"
