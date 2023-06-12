@@ -21,6 +21,7 @@ export PATH="/usr/local/opt/bzip2/bin:$PATH"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export PATH="/opt/homebrew/opt/icu4c/bin:$PATH"
 export PATH="/opt/homebrew/opt/icu4c/sbin:$PATH"
+export PATH="$HOME/.console-ninja/.bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 source "$HOME/.cargo/env"
