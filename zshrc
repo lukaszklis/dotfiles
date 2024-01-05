@@ -24,7 +24,6 @@ export PATH="/opt/homebrew/opt/icu4c/sbin:$PATH"
 export PATH="$HOME/.console-ninja/.bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
-source "$HOME/.cargo/env"
 
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
