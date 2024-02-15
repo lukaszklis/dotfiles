@@ -53,13 +53,7 @@ Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
-" Colorscheme
-packadd! dracula_pro
-
 syntax on
-set background=dark
-let g:dracula_colorterm = 0
-colorscheme dracula_pro
 
 " CtrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -137,7 +131,7 @@ let g:syntastic_auto_loc_list=0
 
 " MacVim setup
 if has("gui_macvim")
-  set guifont=Fira\ Code\ Retina:h12
+  set guifont=MonoLisa:h16
   set guioptions=A
   set guioptions-=r
   set guioptions-=R
