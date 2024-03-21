@@ -53,7 +53,11 @@ Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
+" Color scheme
+packadd! dracula_pro
 syntax on
+let g:dracula_colorterm = 0
+colorscheme dracula_pro
 
 " CtrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
