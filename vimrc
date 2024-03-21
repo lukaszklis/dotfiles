@@ -132,13 +132,3 @@ let g:syntastic_check_on_open=0
 let g:syntastic_echo_current_error=0
 let g:syntastic_auto_jump=0
 let g:syntastic_auto_loc_list=0
-
-" MacVim setup
-if has("gui_macvim")
-  set guifont=MonoLisa:h16
-  set guioptions=A
-  set guioptions-=r
-  set guioptions-=R
-  set guioptions-=l
-  set go-=L
-end
