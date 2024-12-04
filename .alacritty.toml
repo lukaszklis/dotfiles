@@ -14,3 +14,9 @@ opacity = 0.95
 [font]
 size = 17.0
 normal = { family = "MonoLisa", style = "Regular"  }
+
+[keyboard]
+bindings = [
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left",  mods = "Alt", chars = "\u001BB" },
+]
