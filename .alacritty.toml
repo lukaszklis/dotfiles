@@ -8,9 +8,8 @@ import = [
 style = { shape = "Block", blinking = "Always" }
 
 [window]
-decorations = "Buttonless"
-dynamic_padding = true
-opacity = 0.9
+padding = { x = 4, y = 2 }
+opacity = 0.95
 
 [font]
 size = 17.0
