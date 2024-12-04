@@ -40,5 +40,6 @@ alias cl="clear"
 
 # work-related functions
 [ -f $ZSH_CUSTOM/functions/work.sh ] && source $ZSH_CUSTOM/functions/work.sh
+[ -f $ZSH_CUSTOM/functions/personal.sh ] && source $ZSH_CUSTOM/functions/personal.sh
 
 eval "$(direnv hook zsh)"
