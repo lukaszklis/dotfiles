@@ -1,0 +1,17 @@
+[general]
+import = [
+".config/alacritty/dracula-pro-alucard.toml",
+".config/alacritty/dracula-pro-pro.toml",
+]
+
+[cursor]
+style = { shape = "Block", blinking = "Always" }
+
+[window]
+decorations = "Buttonless"
+dynamic_padding = true
+opacity = 0.9
+
+[font]
+size = 17.0
+normal = { family = "MonoLisa", style = "Regular"  }
