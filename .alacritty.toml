@@ -1,7 +1,6 @@
 [general]
 import = [
-".config/alacritty/dracula-pro-alucard.toml",
-".config/alacritty/dracula-pro-pro.toml",
+"~/.config/alacritty/themes/themes/github_dark.toml"
 ]
 
 [cursor]
