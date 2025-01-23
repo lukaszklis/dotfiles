@@ -1,6 +1,6 @@
 [general]
 import = [
-".config/alacritty/themes/themes/github_dark.toml"
+".config/alacritty/dracula-pro-pro.toml"
 ]
 
 [cursor]
