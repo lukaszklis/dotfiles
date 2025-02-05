@@ -11,7 +11,7 @@ ZSH_CUSTOM=$HOME/dev/personal/dotfiles/zsh-custom
 
 fpath=($HOME/.asdf/completions $fpath)
 fpath=($ZSH_CUSTOM/plugins/zsh-completions/src $fpath)
-plugins=(asdf autojump common-aliases composer git npm macos sublime-merge vagrant zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(asdf autojump common-aliases git npm macos zsh-autosuggestions zsh-syntax-highlighting)
 
 export GOPATH="$HOME/dev/go"
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:$GOPATH/bin"
