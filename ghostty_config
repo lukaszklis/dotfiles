@@ -5,10 +5,9 @@ shell-integration-features = no-cursor
 
 # Typography
 font-family = MonoLisa
-font-size = 16
-
-# Accessibility
-minimum-contrast = 4
+font-size = 17
+font-thicken = true
+font-thicken-strength = 200
 
 # Color scheme
-theme = dark:github-dark-high-contrast,light:github-light-high-contrast
+theme = dracula
