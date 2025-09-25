@@ -50,10 +50,12 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 call plug#end()
 
 " Color scheme
+let g:lightline = {'colorscheme': 'catppuccin_mocha'}
 syntax on
 
 " CtrlP
