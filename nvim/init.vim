@@ -4,6 +4,7 @@ set lazyredraw
 set encoding=utf-8
 set ruler
 set clipboard=unnamedplus " Neovim uses unnamedplus for system clipboard
+set termguicolors " Enable true color support for colorschemes
 filetype plugin indent on " Neovim handles filetype better
 
 " Backups
@@ -49,13 +50,14 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
-Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
 call plug#end()
 
 " Color scheme
-let g:lightline = {'colorscheme': 'catppuccin_mocha'}
 syntax on
+colorscheme catppuccin_mocha
+let g:lightline = {'colorscheme': 'catppuccin_mocha'}
 
 " CtrlP
 " Note: runtimepath reference removed as plugins are managed by vim-plug
@@ -92,6 +94,7 @@ let g:airline#extensions#tabline#enabled=1
 
 " Remaps
 nnoremap ; :
+vnoremap ; :
 nnoremap j gj
 nnoremap k gk
 noremap tt :tabnew<cr>
