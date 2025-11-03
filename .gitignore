@@ -1,8 +1,3 @@
 .DS_Store
-vim/pack/*
-vim/plugged/*
-vim/pack/*
-vim/.netrwhist
 zsh-custom/functions/work.zsh
 zsh-custom/functions/personal.zsh
-zsh-custom/themes/dracula-pro.zsh-theme

@@ -2,10 +2,9 @@
 set ttyfast
 set lazyredraw
 set encoding=utf-8
-set nocompatible
 set ruler
-set clipboard=unnamed
-filetype off
+set clipboard=unnamedplus " Neovim uses unnamedplus for system clipboard
+filetype plugin indent on " Neovim handles filetype better
 
 " Backups
 set nobackup
@@ -34,7 +33,7 @@ set wildignore+=*.DS_Store,*/.sass-cache/,*/.vagrant/,*/tmp/*,*.pdf,*/node_modul
 set hlsearch
 
 " Bundles
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged') " Neovim standard plugin location
 
 Plug 'Townk/vim-autoclose'
 Plug 'airblade/vim-gitgutter'
@@ -59,7 +58,7 @@ let g:lightline = {'colorscheme': 'catppuccin_mocha'}
 syntax on
 
 " CtrlP
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+" Note: runtimepath reference removed as plugins are managed by vim-plug
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\v[\/]\.(git|hg|svn|sass-cache|bundle)$|\v[\/]public|node_modules|bower_components|\v[\/]public\/system|log$|tmp$|bin$|coverage$',
   \ 'file': '\v\.(exe|so|dll|jpg|png|gif|jpeg|scssc|pdf)$'
@@ -131,3 +130,4 @@ let g:syntastic_check_on_open=0
 let g:syntastic_echo_current_error=0
 let g:syntastic_auto_jump=0
 let g:syntastic_auto_loc_list=0
+

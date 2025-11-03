@@ -26,16 +26,16 @@ export PATH="$HOME/.console-ninja/.bin:$PATH"
 source $ZSH/oh-my-zsh.sh
 
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+  export EDITOR='nvim'
 fi
 
 # aliases
 alias update_submodules="git submodule update --recursive --remote"
 alias jpg2jpg="mogrify -format jpg -quality 85 *1x.jpg; mogrify -format jpg -quality 35 *2x.jpg; find . -name '*.jpg' | imageoptim"
-alias ohmyzsh="vim ~/.oh-my-zsh"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias png2jpg="mogrify -format jpg -background white -alpha remove -quality 85 *1x.png; mogrify -format jpg -background white -alpha remove -quality 35 *2x.png; find . -name '*.jpg' | imageoptim"
-alias vimconfig="vim ~/.vimrc"
-alias zshconfig="vim ~/.zshrc"
+alias nvimconfig="nvim ~/.config/nvim/init.vim"
+alias zshconfig="nvim ~/.zshrc"
 alias cl="clear"
 
 # work-related functions
@@ -43,3 +43,11 @@ alias cl="clear"
 [ -f $ZSH_CUSTOM/functions/personal.sh ] && source $ZSH_CUSTOM/functions/personal.sh
 
 eval "$(direnv hook zsh)"
+
+# pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
