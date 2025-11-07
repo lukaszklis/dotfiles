@@ -97,21 +97,6 @@ nnoremap ; :
 vnoremap ; :
 nnoremap j gj
 nnoremap k gk
-noremap tt :tabnew<cr>
-noremap ,v :vsp^<cr>
-noremap ,h :split^<cr>
-nmap <silent> <Up> :wincmd k<CR>
-nmap <silent> <Down> :wincmd j<CR>
-nmap <silent> <Left> :wincmd h<CR>
-nmap <silent> <Right> :wincmd l<CR>
-nnoremap <silent> ,b :CtrlPBuffer<cr>
-nnoremap <silent> <C-b> :CtrlPBuffer<cr>
-map ,s :Rgrep<CR>
-nmap ,gs :Gstatus<cr>
-nmap ,gd :Gdiff<cr>
-nmap ,gb :Gblame<cr>
-noremap ,f :NERDTreeFind<cr>
-noremap ,d :NERDTreeToggle<cr>
 
 " grep.vim
 au FileType qf nmap <buffer> <cr> <cr><c-w><c-p>
@@ -133,4 +118,3 @@ let g:syntastic_check_on_open=0
 let g:syntastic_echo_current_error=0
 let g:syntastic_auto_jump=0
 let g:syntastic_auto_loc_list=0
-
