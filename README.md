@@ -125,7 +125,6 @@ update_submodules
 
    The extension-specific config (`nvim/init-extension.vim`) is a minimal version that avoids conflicts with the editor's built-in features. The VS Code/Cursor settings are configured in `.vscode/settings.json` to use this separate config.
 
-
 ### 4. Setup Git Configuration
 
 1. **Symlink gitconfig:**
@@ -172,7 +171,7 @@ Import the profile:
 | `gitconfig` | `~/.gitconfig` | Git configuration |
 | `gitignore` | `~/.gitignore` | Global Git ignore patterns |
 | `nvim/init.vim` | `~/.config/nvim/init.vim` | Neovim configuration |
-| `nvim-extension/init.vim` | `~/.config/nvim-extension/init.vim` | Neovim config for VS Code/Cursor extension |
+| `nvim/extension.vim` | `~/.config/nvim/extension.vim` | Neovim config for VS Code/Cursor extension |
 | `.vscode/settings.json` | Project-specific | VS Code/Cursor settings (including Neovim extension config) |
 | `oh-my-zsh/` | `~/.oh-my-zsh` | Oh My Zsh framework |
 | `zsh-custom/` | Referenced directly | Custom zsh themes and plugins |
@@ -237,15 +236,16 @@ ls -la ~/.local/share/nvim/site/autoload/plug.vim
 If you're experiencing conflicts with the Neovim extension:
 
 1. Ensure the extension-specific config is symlinked:
+
    ```bash
-   ls -la ~/.config/nvim-extension
+   ls -la ~/.config/nvim/
    ```
 
 2. Verify `.vscode/settings.json` is configured correctly (should be in your project root or workspace)
 
 3. Restart VS Code/Cursor after making changes
 
-4. The extension config uses minimal plugins to avoid conflicts - if you need additional plugins, add them to `nvim-extension/init.vim` rather than the main `nvim/init.vim`
+4. The extension config uses minimal plugins to avoid conflicts - if you need additional plugins, add them to `nvim/extension.vim` rather than the main `nvim/init.vim`
 
 ## Editor
 

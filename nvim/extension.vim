@@ -49,13 +49,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
 call plug#end()
-
-" Color scheme
-syntax on
-colorscheme catppuccin_mocha
 
 " Remaps
 nnoremap ; :

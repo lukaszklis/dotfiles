@@ -1,0 +1,5 @@
+{
+  "cSpell.words": ["nvim"],
+  "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/extension.vim",
+  "vscode-neovim.neovimInitVimPaths.linux": "~/.config/nvim/extension.vim"
+}
