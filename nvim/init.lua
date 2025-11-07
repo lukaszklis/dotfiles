@@ -49,7 +49,6 @@ vim.cmd("Plug 'tpope/vim-commentary'")
 vim.cmd("Plug 'tpope/vim-fugitive'")
 vim.cmd("Plug 'tpope/vim-surround'")
 vim.cmd("Plug 'catppuccin/nvim', { 'as': 'catppuccin' }")
-vim.cmd("Plug 'neovim/nvim-lspconfig'")
 vim.cmd("Plug 'nvim-lua/plenary.nvim'")
 vim.cmd("Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }")
 
@@ -111,11 +110,6 @@ if telescope_status_ok then
   vim.keymap.set("n", "<leader>fc", builtin.commands, { desc = "Commands" })
   vim.keymap.set("n", "<leader>fk", builtin.keymaps, { desc = "Keymaps" })
 
-  -- LSP integration with telescope
-  vim.keymap.set("n", "<leader>fs", builtin.lsp_document_symbols, { desc = "Document symbols" })
-  vim.keymap.set("n", "<leader>fS", builtin.lsp_workspace_symbols, { desc = "Workspace symbols" })
-  vim.keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "Diagnostics" })
-
   -- Git integration (if fugitive is available)
   vim.keymap.set("n", "<leader>fG", builtin.git_files, { desc = "Git files" })
 end
@@ -176,121 +170,4 @@ vim.api.nvim_create_autocmd("Syntax", {
   pattern = "*",
   command = "RainbowParenthesesLoadBraces",
 })
-
--- LSP Configuration
-local lspconfig = vim.lsp.config
-
--- LSP keymaps
-local on_attach = function(client, bufnr)
-  -- Enable completion triggered by <c-x><c-o>
-  vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
-
-  -- Mappings
-  local opts = { noremap = true, silent = true, buffer = bufnr }
-  vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
-  vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-  vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-  vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
-  vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts)
-  vim.keymap.set("n", "<space>wa", vim.lsp.buf.add_workspace_folder, opts)
-  vim.keymap.set("n", "<space>wr", vim.lsp.buf.remove_workspace_folder, opts)
-  vim.keymap.set("n", "<space>wl", function()
-    print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-  end, opts)
-  vim.keymap.set("n", "<space>D", vim.lsp.buf.type_definition, opts)
-  vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, opts)
-  vim.keymap.set("n", "<space>ca", vim.lsp.buf.code_action, opts)
-  vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
-  vim.keymap.set("n", "<space>f", function()
-    vim.lsp.buf.format({ async = true })
-  end, opts)
-end
-
--- Configure language servers
-
--- TypeScript/JavaScript (requires: npm install -g typescript typescript-language-server)
-lspconfig.tsserver.setup({
-  on_attach = on_attach,
-  settings = {
-    typescript = {
-      inlayHints = {
-        includeInlayParameterNameHints = "all",
-        includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-        includeInlayFunctionParameterTypeHints = true,
-        includeInlayVariableTypeHints = true,
-        includeInlayPropertyDeclarationTypeHints = true,
-        includeInlayFunctionLikeReturnTypeHints = true,
-        includeInlayEnumMemberValueHints = true,
-      },
-    },
-    javascript = {
-      inlayHints = {
-        includeInlayParameterNameHints = "all",
-        includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-        includeInlayFunctionParameterTypeHints = true,
-        includeInlayVariableTypeHints = true,
-        includeInlayPropertyDeclarationTypeHints = true,
-        includeInlayFunctionLikeReturnTypeHints = true,
-        includeInlayEnumMemberValueHints = true,
-      },
-    },
-  },
-})
-
--- Python (requires: pip install pyright or npm install -g pyright)
-lspconfig.pyright.setup({
-  on_attach = on_attach,
-  settings = {
-    python = {
-      analysis = {
-        typeCheckingMode = "basic",
-        autoImportCompletions = true,
-        useLibraryCodeForTypes = true,
-      },
-    },
-  },
-})
-
--- Lua (for Neovim config)
-lspconfig.lua_ls.setup({
-  on_attach = on_attach,
-  settings = {
-    Lua = {
-      runtime = {
-        version = "LuaJIT",
-      },
-      diagnostics = {
-        globals = { "vim" },
-      },
-      workspace = {
-        library = vim.api.nvim_get_runtime_file("", true),
-      },
-      telemetry = {
-        enable = false,
-      },
-    },
-  },
-})
-
--- Show diagnostics in a floating window
-vim.diagnostic.config({
-  virtual_text = true,
-  signs = true,
-  update_in_insert = false,
-  underline = true,
-  severity_sort = true,
-  float = {
-    focusable = false,
-    style = "minimal",
-    border = "rounded",
-    source = "always",
-    header = "",
-    prefix = "",
-  },
-})
-
--- Diagnostic keymaps
-vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
-vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
-vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist, { desc = "Diagnostics list" })
 
