@@ -123,7 +123,7 @@ update_submodules
    ln -s ~/dev/personal/dotfiles/nvim-extension ~/.config/nvim-extension
    ```
 
-   The extension-specific config (`nvim/init-extension.vim`) is a minimal version that avoids conflicts with the editor's built-in features. The VS Code/Cursor settings are configured in `.vscode/settings.json` to use this separate config.
+   The extension-specific config (`nvim/extension.lua`) is a minimal Lua version that avoids conflicts with the editor's built-in features. The VS Code/Cursor settings are configured in `.vscode/settings.json` to use this separate config.
 
 ### 4. Setup Git Configuration
 
@@ -170,8 +170,8 @@ Import the profile:
 | `zshrc` | `~/.zshrc` | Zsh shell configuration |
 | `gitconfig` | `~/.gitconfig` | Git configuration |
 | `gitignore` | `~/.gitignore` | Global Git ignore patterns |
-| `nvim/init.vim` | `~/.config/nvim/init.vim` | Neovim configuration |
-| `nvim/extension.vim` | `~/.config/nvim/extension.vim` | Neovim config for VS Code/Cursor extension |
+| `nvim/init.lua` | `~/.config/nvim/init.lua` | Neovim configuration (Lua) |
+| `nvim/extension.lua` | `~/.config/nvim/extension.lua` | Neovim config for VS Code/Cursor extension (Lua) |
 | `.vscode/settings.json` | Project-specific | VS Code/Cursor settings (including Neovim extension config) |
 | `oh-my-zsh/` | `~/.oh-my-zsh` | Oh My Zsh framework |
 | `zsh-custom/` | Referenced directly | Custom zsh themes and plugins |
@@ -245,15 +245,18 @@ If you're experiencing conflicts with the Neovim extension:
 
 3. Restart VS Code/Cursor after making changes
 
-4. The extension config uses minimal plugins to avoid conflicts - if you need additional plugins, add them to `nvim/extension.vim` rather than the main `nvim/init.vim`
+4. The extension config uses minimal plugins to avoid conflicts - if you need additional plugins, add them to `nvim/extension.lua` rather than the main `nvim/init.lua`
 
 ## Editor
 
-This repository uses **Neovim** as the primary editor. Configuration is located in `nvim/init.vim`.
+This repository uses **Neovim** as the primary editor. Configuration is written in **Lua** and located in `nvim/init.lua`.
 
-- See `nvim/README.md` for Neovim setup instructions
+- Main config: `nvim/init.lua` - Full Neovim configuration with LSP, Telescope, and plugins
+- Extension config: `nvim/extension.lua` - Minimal config for VS Code/Cursor extension
 - Use `nvimconfig` alias to edit Neovim configuration
 - Git is configured to use `nvim` as the editor
+
+**Note:** Neovim automatically loads `init.lua` if present (preferred over `init.vim`). The symlink setup works the same way.
 
 ## Shell
 
