@@ -12,7 +12,8 @@ if vim.fn.exists("##FocusGained") == 1 then
   vim.api.nvim_create_autocmd("FocusGained", {
     pattern = "*",
     callback = function()
-      if vim.fn.mode() ~= "n" then
+      local mode = vim.api.nvim_get_mode().mode
+      if mode == "i" or mode == "R" or mode == "Rv" then
         vim.cmd("stopinsert")
       end
     end,
@@ -21,7 +22,8 @@ end
 vim.api.nvim_create_autocmd("WinEnter", {
   pattern = "*",
   callback = function()
-    if vim.fn.mode() ~= "n" then
+    local mode = vim.api.nvim_get_mode().mode
+    if mode == "i" or mode == "R" or mode == "Rv" then
       vim.cmd("stopinsert")
     end
   end,
