@@ -17,10 +17,6 @@ export GOPATH="$HOME/dev/go"
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/sbin:$GOPATH/bin"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
-export PATH="/usr/local/opt/bzip2/bin:$PATH"
-export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
-export PATH="/opt/homebrew/opt/icu4c/bin:$PATH"
-export PATH="/opt/homebrew/opt/icu4c/sbin:$PATH"
 export PATH="$HOME/.console-ninja/.bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
